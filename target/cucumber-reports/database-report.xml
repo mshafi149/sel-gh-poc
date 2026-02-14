@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="6.827" tests="7" skipped="0" failures="0" errors="0">
+<testcase classname="Database Testing with H2" name="Create and verify users table" time="2.438">
+<system-out><![CDATA[
+Given the database connection is established................................passed
+When I create a users table.................................................passed
+Then the users table should exist...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Database Testing with H2" name="Insert and retrieve a user" time="0.786">
+<system-out><![CDATA[
+Given the database connection is established................................passed
+Given I create a users table................................................passed
+When I insert a user with id 1, name "John Doe", and email "john@example.com".passed
+Then I should be able to retrieve user with id 1............................passed
+And the user name should be "John Doe"......................................passed
+And the user email should be "john@example.com".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Database Testing with H2" name="Insert multiple users and count" time="0.685">
+<system-out><![CDATA[
+Given the database connection is established................................passed
+Given I create a users table................................................passed
+When I insert the following users:..........................................passed
+Then the users table should have 3 records..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Database Testing with H2" name="Update user information" time="0.756">
+<system-out><![CDATA[
+Given the database connection is established................................passed
+Given I create a users table................................................passed
+And I insert a user with id 1, name "John Doe", and email "john@example.com".passed
+When I update user with id 1 to have email "john.updated@example.com".......passed
+Then the user with id 1 should have email "john.updated@example.com"........passed
+]]></system-out>
+</testcase>
+<testcase classname="Database Testing with H2" name="Delete a user" time="0.665">
+<system-out><![CDATA[
+Given the database connection is established................................passed
+Given I create a users table................................................passed
+And I insert a user with id 1, name "John Doe", and email "john@example.com".passed
+When I delete user with id 1................................................passed
+Then the user with id 1 should not exist....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Database Testing with H2" name="Query users by email domain" time="0.742">
+<system-out><![CDATA[
+Given the database connection is established................................passed
+Given I create a users table................................................passed
+And I insert the following users:...........................................passed
+When I query users with email domain "example.com"..........................passed
+Then I should get 2 users...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Database Testing with H2" name="Attempt to insert duplicate user ID" time="0.668">
+<system-out><![CDATA[
+Given the database connection is established................................passed
+Given I create a users table................................................passed
+And I insert a user with id 1, name "John Doe", and email "john@example.com".passed
+When I attempt to insert a user with id 1, name "Jane Doe", and email "jane@example.com".passed
+Then a duplicate key exception should be thrown.............................passed
+]]></system-out>
+</testcase>
+</testsuite>

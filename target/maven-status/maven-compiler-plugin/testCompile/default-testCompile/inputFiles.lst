@@ -1,0 +1,10 @@
+/Users/shafi.haja/IdeaProjects/sel_gh_poc/src/test/java/pages/LoginPage.java
+/Users/shafi.haja/IdeaProjects/sel_gh_poc/src/test/java/runners/ApiTestRunner.java
+/Users/shafi.haja/IdeaProjects/sel_gh_poc/src/test/java/runners/DatabaseTestRunner.java
+/Users/shafi.haja/IdeaProjects/sel_gh_poc/src/test/java/runners/TestRunner.java
+/Users/shafi.haja/IdeaProjects/sel_gh_poc/src/test/java/stepdefs/ApiSteps.java
+/Users/shafi.haja/IdeaProjects/sel_gh_poc/src/test/java/stepdefs/DatabaseSteps.java
+/Users/shafi.haja/IdeaProjects/sel_gh_poc/src/test/java/stepdefs/Hooks.java
+/Users/shafi.haja/IdeaProjects/sel_gh_poc/src/test/java/stepdefs/LoginSteps.java
+/Users/shafi.haja/IdeaProjects/sel_gh_poc/src/test/java/utils/DatabaseHelper.java
+/Users/shafi.haja/IdeaProjects/sel_gh_poc/src/test/java/utils/DriverFactory.java
